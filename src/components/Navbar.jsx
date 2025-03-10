@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { useCallback } from "react";
-import { BiMap, BiSearch, BiCartAlt, BiCart } from "react-icons/bi";
+import { BiMap, BiSearch, BiCart } from "react-icons/bi";
 
 import img from "../assets/image.png";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -81,7 +80,7 @@ const Navbar = () => {
   return (
     <div
       id="nav"
-      className="w-full py-1 bg-[#131921] h-[60px] items-center flex"
+      className="w-full py-1 bg-[#131921] h-[60px] items-center justify-center flex"
     >
       {/* Logo */}
       <div
@@ -104,24 +103,24 @@ const Navbar = () => {
       {/* Location */}
       <div
         id="location-box"
-        className="hover:cursor-pointer hover:border w-[220px] flex h-full rounded-sm p-2"
+        className="hover:cursor-pointer items-center justify-center hover:border w-[260px] flex h-full rounded-sm "
       >
-        <span className="items-end pb-2  flex  justify-center">
+        <span className="items-center pb-2  flex  justify-center">
           <BiMap className="text-white text-xl " />
         </span>
-        <div className="flex flex-col ml-1">
-          <span className="text-[#cccccc] text-[12px]"> Delivering to</span>
+        <div className="flex flex-col  ml-1">
+          <span className="text-[#cccccc]  text-[12px]"> Delivering to</span>
           <span className="text-white text-sm font-semibold">
             Update Location
           </span>
         </div>
       </div>
       {/* Search */}
-      <div id="search" className="flex w-[65%] ">
+      <div id="search" className="flex  m-1 w-[65%]  ">
         <select
           name="options"
           id="options"
-          className="md:w-[124px] sm:w-10 h-auto ml-1 rounded-l border-none focus:outline-[#febd69]  focus:border-2"
+          className="md:w-[124px]   text- min-w-[124px] w-auto sm:w-10 h-auto ml-1 rounded-l border-none focus:outline-[#febd69]  focus:border-2"
         >
           <option value="">All Categories</option>
           <option value="">Alexa Skills</option>
@@ -144,7 +143,7 @@ const Navbar = () => {
           type="text"
           formAction="search"
           placeholder="Search Amazon.in"
-          className="pl-3 px-3 py-2 w-[70%]"
+          className="  w-[90%]"
         />
         <span className="text-black w-10 h-10 bg-[#febd69] rounded-r flex items-center text-2xl justify-center cursor-pointer focus:border-[#febd69]">
           <BiSearch className="w-6 h-6 " />
@@ -155,7 +154,10 @@ const Navbar = () => {
       <div
         id="region country "
         onMouseEnter={hoverOn}
-        className=" flex hover:border m-1 rounded-sm"
+        onMouseLeave={() => {
+          setLangOpen(false);
+        }}
+        className=" flex hover:border m-1 h-full items-center rounded-sm"
       >
         <div className="flex  m-2 gap-1 items-end justify-center ">
           <img src={img} className="w-6 h-6" />
@@ -170,7 +172,7 @@ const Navbar = () => {
             onMouseLeave={() => {
               setLangOpen(false);
             }}
-            className="fixed top-[8%] border cursor-pointer rounded-sm p-4  accent-[#febd69] ring-[#febd69]   "
+            className="fixed bg-white top-[8%] border cursor-pointer rounded-sm p-4  accent-[#febd69] ring-[#febd69]   "
           >
             <label htmlFor="lang" radioGroup="lang">
               {lang.map((items) => (
@@ -197,8 +199,8 @@ const Navbar = () => {
                 Learn more
               </div>
               <hr />
-              <div className="flex text-[12px] pl-2 gap-1 justify-center items-center">
-                <img src={img} className="w-4 h-4 " />
+              <div className="flex text-[12px] pl-2 gap-1  justify-center items-center">
+                <img src={img} className="w-4 h-4 pl- " />
                 <span>You are shopping on Amazon.in</span>
               </div>
               <span className="text-blue-400 px-7 text-[12px] hover:decoration-amber-600 hover:underline  cursor-pointer">
@@ -211,16 +213,19 @@ const Navbar = () => {
 
       {/* Profile */}
       <div
-        onClick={accountHover}
-        className="flex flex-col text-white cursor-pointer hover:border items-center justify-center "
+        onMouseEnter={accountHover}
+        onMouseLeave={() => {
+          setAccountMenuOpen(false);
+        }}
+        className="flex flex-col  rounded-sm p-2  text-white h-full w-auto cursor-pointer hover:border items-start justify-center "
       >
-        <span className="text-[12px]">Hello, sign in</span>
-        <span className="text-[14px] font-semibold">
+        <span className="text-[12px] ">Hello, sign in</span>
+        <span className="text-[14px] inline-flex w-auto font-semibold">
           Account & Lists{" "}
-          <IoMdArrowDropdown className="text-gray-400 inline-flex  text-xl" />
+          <IoMdArrowDropdown className="text-gray-400  text-xl" />
         </span>
         {accountMenuOpen && (
-          <div className=" h-[410px] rounded-sm   w-[500px] border pl-4 fixed top-[8%]  ">
+          <div className=" h-[410px] rounded-sm bg-white  w-[500px] border pl-4 fixed top-[8%] right-[8%]">
             <div className="w-full flex flex-col  items-center h-[18%] justify-center">
               <button className="bg-[#ffd814] text-black px-16 py-[6px] rounded-xl focus:outline-sky-900 ">
                 Sign in
@@ -296,13 +301,17 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <div className="border rounded-sm">
-        <span className="text-[12px] inline-block text-white">
-          Returns<span className="font-semibold text-sm px-1"> & Orders</span>
-        </span>
+      {/* Returns */}
+      <div className=" rounded-sm h-full hover:border  flex-col items-center cursor-pointer flex p-1">
+        <div className="text-[12px]  text-white">
+          Returns
+          <span className="font-semibold  text-white text-sm px-1">
+            & Orders
+          </span>
+        </div>
       </div>
-      <div>
-        <span>
+      <div className="text-white  h-full cursor-pointer flex items-center justify-center text-4xl hover:border">
+        <span className="px-4">
           <BiCart />
         </span>
       </div>
