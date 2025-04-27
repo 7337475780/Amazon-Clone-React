@@ -16,8 +16,8 @@ const ProductCards = () => {
   return (
     <div className="w-screen h-screen flex  justify-center items-center">
       <div className="h-screen  grid grid-cols-2 sm:grid sm:grid-cols-2 md:max-sm:grid-cols-3 lg:grid-cols-4  gap-4  justify-between items-center">
-        <div className="w-[300px] h-[400px] flex flex-col justify-center gap-4 bg-white items-center ">
-          <div className="w-full ml-4 ">
+        <div className="w-[300px] h-[410px] flex flex-col justify-center gap-4 bg-white items-center ">
+          <div className="w-full ml-4  mt-4 ">
             <h1 className="text-xl font-semibold ">Continue shopping deals</h1>
           </div>
           <div className="w-full h-[250px]  grid grid-cols-2 gap-4  p-2">
@@ -46,128 +46,151 @@ const ProductCards = () => {
               />
             </div>
           </div>
-          <div className="w-full ml-4 ">
+
+          <div className="w-full ml-4  mt-4 ">
             <span className="text-sm text-blue-400 cursor-pointer">
               See all deals
             </span>
           </div>
         </div>
-        <div className="w-[300px] h-[400px] flex flex-col justify-center gap-4 bg-white items-center ">
-          <div className="w-full ml-4 text-wrap ">
+        <div className="w-[320px]  h-[410px] flex flex-col justify-center gap-2 bg-white items-center ">
+          <div className="w-full ml-4  mt-4 text-wrap px-2 ">
             <h1 className="text-xl font-semibold ">
               Appliances for your home | Up to 55% off
             </h1>
           </div>
-          <div className="w-full h-[250px]  grid grid-cols-2 gap-4  p-2">
-            <div className=" flex justify-center flex-col items-center ">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"
-                alt=""
-              />
-              <span className="text-sm justify-start flex w-full ">
-                Air conditioners
-              </span>
+
+          <div className="gap-2 flex flex-col  justify-center items-center w-[306px] h-[276px]">
+            <div className="flex justify-center items-center gap-4 ">
+              <div>
+                <div className="h-[100px] border max-w-[135px] flex   ">
+                  <img
+                    src="/src/assets/assets/asset 11.jpeg"
+                    alt=""
+                    className="object-cover flex w-full h-full"
+                  />
+                </div>
+                <div className="text-sm ">
+                  <span>Air Conditioners</span>
+                </div>
+              </div>
+              <div>
+                <div className="h-[100px] border max-w-[135px] flex   ">
+                  <img
+                    src="/src/assets/assets/asset 12.jpeg"
+                    alt=""
+                    className="object-cover flex w-full h-full"
+                  />
+                </div>
+                <div className="text-sm ">
+                  <span>Refrigerators</span>
+                </div>
+              </div>
             </div>
-            <div className=" flex justify-center flex-col items-center">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"
-                alt=""
-              />
-              <span className="text-sm justify-start flex w-full ">
-                Refrigerators
-              </span>
-            </div>
-            <div className=" flex justify-center flex-col items-center">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
-                alt=""
-              />
-              <span className="text-sm justify-start flex w-full ">
-                Microwaves
-              </span>
-            </div>
-            <div className=" flex justify-center flex-col items-center">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"
-                alt=""
-              />
-              <span className="text-sm justify-start flex w-full ">
-                Washing machines
-              </span>
+            <div className="flex justify-center items-center gap-4 ">
+              <div>
+                <div className="h-[100px] border max-w-[135px] flex   ">
+                  <img
+                    src="/src/assets/assets/asset 13.jpeg"
+                    alt=""
+                    className="object-cover flex w-full h-full"
+                  />
+                </div>
+                <div className="text-sm ">
+                  <span>Microwaves</span>
+                </div>
+              </div>
+              <div>
+                <div className="h-[100px] border max-w-[135px] flex   ">
+                  <img
+                    src="/src/assets/assets/asset 14.jpeg"
+                    alt=""
+                    className="object-cover flex w-full h-full"
+                  />
+                </div>
+                <div className="text-sm ">
+                  <span>Washing machines</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="w-full ml-4 ">
-            <span className="text-sm text-blue-400 cursor-pointer">
-              See all deals
-            </span>
+          <div className="text-blue-400 text-sm cursor-pointer ml-4 flex justify-start h-[6%] w-full pl-2">
+            <span>See all deals</span>
           </div>
         </div>
-        <div className="w-[300px] h-[400px] flex flex-col justify-center gap-4 bg-white items-center ">
-          <div className="w-full ml-4 text-wrap ">
+        <div className="w-[320px]  border h-[410px] flex flex-col justify-center gap-2 bg-white items-center ">
+          <div className="w-full ml-4  mt-4 text-wrap px-2 ">
             <h1 className="text-xl font-semibold ">
               Revamp your home in style
             </h1>
           </div>
-          <div className="w-full h-[250px]  grid grid-cols-2 gap-4  p-2">
-            <div className=" flex justify-center flex-col items-center ">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg"
-                alt=""
-              />
-              <span className="text-sm justify-start flex w-full ">
-                Cushion covers, bedsheets & more
-              </span>
+
+          <div className="gap-2 flex flex-col  justify-center items-center w-[306px] h-[276px]">
+            <div className="flex justify-center items-center gap-4 ">
+              <div>
+                <div className="h-[100px] border max-w-[135px] flex   ">
+                  <img
+                    src="/src/assets/assets/asset 15.jpeg"
+                    alt=""
+                    className="object-cover flex w-full h-full"
+                  />
+                </div>
+                <div className="text-sm  text-wrap ">
+                  <span>Cushion covers,bedsheets & more</span>
+                </div>
+              </div>
+              <div>
+                <div className="h-[100px] border max-w-[135px] flex   ">
+                  <img
+                    src="/src/assets/assets/asset 12.jpeg"
+                    alt=""
+                    className="object-cover flex w-full h-full"
+                  />
+                </div>
+                <div className="text-sm ">
+                  <span>Refrigerators</span>
+                </div>
+              </div>
             </div>
-            <div className=" flex justify-center flex-col items-center">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
-                alt=""
-              />
-              <span className="text-sm justify-start flex w-full ">
-                Figurines,vases & more
-              </span>
-            </div>
-            <div className=" flex justify-center flex-col items-center">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg"
-                alt=""
-              />
-              <span className="text-sm justify-start flex w-full ">
-                Home storage
-              </span>
-            </div>
-            <div className=" flex justify-center flex-col items-center">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg"
-                alt=""
-              />
-              <span className="text-sm justify-start flex w-full ">
-                Lighting solutions
-              </span>
+            <div className="flex justify-center items-center gap-4 ">
+              <div>
+                <div className="h-[100px] border max-w-[135px] flex   ">
+                  <img
+                    src="/src/assets/assets/asset 13.jpeg"
+                    alt=""
+                    className="object-cover flex w-full h-full"
+                  />
+                </div>
+                <div className="text-sm ">
+                  <span>Microwaves</span>
+                </div>
+              </div>
+              <div>
+                <div className="h-[100px] border max-w-[135px] flex   ">
+                  <img
+                    src="/src/assets/assets/asset 14.jpeg"
+                    alt=""
+                    className="object-cover flex w-full h-full"
+                  />
+                </div>
+                <div className="text-sm ">
+                  <span>Washing machines</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="w-full ml-4 ">
-            <span className="text-sm text-blue-400 cursor-pointer">
-              Explore all
-            </span>
+          <div className="text-blue-400 cursor-pointer ml-4 text-sm flex justify-start h-[10%] w-full pl-2">
+            <span>See all deals</span>
           </div>
         </div>
         <div className="w-[300px] h-[400px] flex flex-col justify-center gap-4 bg-white items-center ">
-          <div className="w-full ml-4 text-wrap ">
+          <div className="w-full ml-4  mt-4 text-wrap ">
             <h1 className="text-xl font-semibold ">
               Starting ₹ 149 | Headphones
             </h1>
           </div>
           <div className="w-full h-[250px]  grid grid-cols-2 gap-4  p-2">
-            <div className=" flex justify-center flex-col items-center ">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px] ">
               <img
                 className="w-full h-full object-cover"
                 src="src/assets/assets/asset 19.jpeg"
@@ -177,7 +200,7 @@ const ProductCards = () => {
                 Starting ₹249 | boAt
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
                 src="src/assets/assets/asset 20.jpeg"
@@ -187,7 +210,7 @@ const ProductCards = () => {
                 Starting ₹349 | boult
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
                 alt=""
@@ -197,7 +220,7 @@ const ProductCards = () => {
                 Starting ₹649 | Noise
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
                 src="src/assets/assets/asset 22.jpeg"
@@ -208,73 +231,74 @@ const ProductCards = () => {
               </span>
             </div>
           </div>
-          <div className="w-full ml-4 ">
+          <div className="w-full ml-4  mt-4 ">
             <span className="text-sm text-blue-400 cursor-pointer">
               See all offers
             </span>
           </div>
         </div>
         <div className="w-[300px] h-[400px] flex flex-col justify-center gap-4 bg-white items-center ">
-          <div className="w-full ml-4 text-wrap ">
+          <div className="w-full ml-4  mt-4 text-wrap ">
             <h1 className="text-xl font-semibold ">
               Automotive essentials | Up to 60%
             </h1>
           </div>
           <div className="w-full h-[250px]  grid grid-cols-2 gap-4  p-2">
-            <div className=" flex justify-center flex-col items-center ">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px] ">
               <img
                 className="w-full h-full object-cover"
-                src=""
+                src="src/assets/assets/asset 23.jpeg"
                 alt=""
               />
               <span className="text-sm justify-start flex w-full ">
-                Air conditioners
+                Cleaning accessories
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
+                src="src/assets/assets/asset 24.jpeg"
                 alt=""
               />
               <span className="text-sm justify-start flex w-full ">
-                Refrigerators
+                Tyre & rim care
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
-                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
+                src="src/assets/assets/asset 25.jpeg"
                 alt=""
               />
               <span className="text-sm justify-start flex w-full ">
-                Microwaves
+                Helmets
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
-                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"
+                src="src/assets/assets/asset 26.jpeg"
                 alt=""
               />
               <span className="text-sm justify-start flex w-full ">
-                Washing machines
+                Vaccum cleaner
               </span>
             </div>
           </div>
-          <div className="w-full ml-4 ">
+          <div className="w-full ml-4  mt-4 ">
             <span className="text-sm text-blue-400 cursor-pointer">
               See all deals
             </span>
           </div>
         </div>
         <div className="w-[300px] h-[400px] flex flex-col justify-center gap-4 bg-white items-center ">
-          <div className="w-full ml-4 text-wrap ">
+          <div className="w-full ml-4  mt-4 text-wrap ">
             <h1 className="text-xl font-semibold ">
               Appliances for your home | Up to 55% off
             </h1>
           </div>
           <div className="w-full h-[250px]  grid grid-cols-2 gap-4  p-2">
-            <div className=" flex justify-center flex-col items-center ">
+            <div className=" flex justify-center w-[130px] h-[130px] flex-col items-center ">
               <img
                 className="w-full h-full object-cover"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"
@@ -284,9 +308,9 @@ const ProductCards = () => {
                 Air conditioners
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover "
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"
                 alt=""
               />
@@ -294,7 +318,7 @@ const ProductCards = () => {
                 Refrigerators
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
@@ -304,7 +328,7 @@ const ProductCards = () => {
                 Microwaves
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"
@@ -315,20 +339,20 @@ const ProductCards = () => {
               </span>
             </div>
           </div>
-          <div className="w-full ml-4 ">
+          <div className="w-full ml-4  mt-4  ">
             <span className="text-sm text-blue-400 cursor-pointer">
               See all deals
             </span>
           </div>
         </div>
         <div className="w-[300px] h-[400px] flex flex-col justify-center gap-4 bg-white items-center ">
-          <div className="w-full ml-4 text-wrap ">
+          <div className="w-full ml-4  mt-4 text-wrap ">
             <h1 className="text-xl font-semibold ">
               Appliances for your home | Up to 55% off
             </h1>
           </div>
           <div className="w-full h-[250px]  grid grid-cols-2 gap-4  p-2">
-            <div className=" flex justify-center flex-col items-center ">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px] ">
               <img
                 className="w-full h-full object-cover"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"
@@ -338,7 +362,7 @@ const ProductCards = () => {
                 Air conditioners
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"
@@ -348,7 +372,7 @@ const ProductCards = () => {
                 Refrigerators
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
@@ -358,7 +382,7 @@ const ProductCards = () => {
                 Microwaves
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"
@@ -369,20 +393,20 @@ const ProductCards = () => {
               </span>
             </div>
           </div>
-          <div className="w-full ml-4 ">
+          <div className="w-full ml-4  mt-4 ">
             <span className="text-sm text-blue-400 cursor-pointer">
               See all deals
             </span>
           </div>
         </div>
         <div className="w-[300px] h-[400px] flex flex-col justify-center gap-4 bg-white items-center ">
-          <div className="w-full ml-4 text-wrap ">
+          <div className="w-full ml-4  mt-4 text-wrap ">
             <h1 className="text-xl font-semibold ">
               Appliances for your home | Up to 55% off
             </h1>
           </div>
           <div className="w-full h-[250px]  grid grid-cols-2 gap-4  p-2">
-            <div className=" flex justify-center flex-col items-center ">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px] ">
               <img
                 className="w-full h-full object-cover"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"
@@ -392,7 +416,7 @@ const ProductCards = () => {
                 Air conditioners
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"
@@ -402,7 +426,7 @@ const ProductCards = () => {
                 Refrigerators
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
@@ -412,7 +436,7 @@ const ProductCards = () => {
                 Microwaves
               </span>
             </div>
-            <div className=" flex justify-center flex-col items-center">
+            <div className=" flex justify-center flex-col items-center w-[130px] h-[130px]">
               <img
                 className="w-full h-full object-cover"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"
@@ -423,7 +447,7 @@ const ProductCards = () => {
               </span>
             </div>
           </div>
-          <div className="w-full ml-4 ">
+          <div className="w-full ml-4  mt-4 ">
             <span className="text-sm text-blue-400 cursor-pointer">
               See all deals
             </span>

@@ -127,7 +127,7 @@ const Hero = () => {
           onClick={scrollLeft}
           onMouseEnter={stopAutoScroll}
           onMouseLeave={startAutoScroll}
-          className="absolute text-4xl  h-full flex items-center z-10 cursor-pointer prev "
+          className="absolute text-4xl   h-full flex items-center z-10 cursor-pointer prev "
         >
           <BiChevronLeft />
         </div>
@@ -141,7 +141,7 @@ const Hero = () => {
           onMouseEnter={stopAutoScroll}
           onMouseLeave={startAutoScroll}
           ref={imgContainerRef}
-          className=" flex w-screen  h-[400px] relative snap-mandatory snap-x  overflow-x-scroll  scroll-smooth no-scroll"
+          className=" flex w-screen  h-[400px] relative snap-mandatory snap-x -z-10 overflow-x-scroll  scroll-smooth no-scroll"
         >
           {images.map((items) => (
             <img
